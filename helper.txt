@@ -1,0 +1,14 @@
+docker compose up -d --build
+
+
+
+Entrar al Ubuntu y “navegar” (shell)
+docker exec -it ubuntu_shell bash
+
+Ahora estás dentro de Ubuntu como devuser. 
+Puedes moverte por el sistema de archivos, editar archivos (vim), ver la red (ip a, netstat), etc.
+
+privilegios root
+docker exec -it --user root ubuntu_shell bash
+
+La carpeta ./shared en el host estará montada en /home/devuser/shared dentro del contenedor (según docker-compose.yml).

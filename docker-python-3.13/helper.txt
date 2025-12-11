@@ -1,0 +1,30 @@
+
+
+Construir la imagen
+docker build es el comando que construye una imagen de Docker a partir de un Dockerfile.
+docker build -t mi-python-app .
+
+Ejecutar el contenedor
+docker run --rm mi-python-app
+
+---------------------------------------------
+¿Qué es Docker Compose?
+
+Docker Compose es una herramienta que te permite:
+
+Definir uno o varios servicios (contenedores) en un solo archivo YAML.
+
+Ejecutar todos esos servicios con un solo comando.
+
+Pasar parámetros, puertos, volúmenes, redes, etc., de forma más organizada.
+
+-------------------------------------------------
+
+Construir y levantar el contenedor:
+docker compose up --build
+
+Ejecutarlo sin reconstruir:
+docker compose up
+
+Pararlo
+docker compose down
