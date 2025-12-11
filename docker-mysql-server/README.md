@@ -1,3 +1,10 @@
+### Crear archivo .env:
+
+MYSQL_ROOT_PASSWORD=rootpassword
+MYSQL_DATABASE=root_db
+MYSQL_USER=root_user
+MYSQL_PASSWORD=root_password
+
 ### Construir la imagen:
 
 docker build -t mi-imagen-mysql .
